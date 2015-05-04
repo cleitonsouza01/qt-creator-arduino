@@ -17,7 +17,7 @@ With all these features and more, Qt Creator can be lightweight, for me one of t
 ## About my template
 What you found in this repositorie is one template that setup Qt Creator as Arduino IDE.
 
-What you need to use (<b>pre-requiriments</b>):
+What you need to use (*pre-requiriments*):
 * PC running Linux (Windows and Mac can use it too, but need change some small things, in future I will provide files ready to use in all environment)
 * Arduino IDE 1.6.3 (http://www.arduino.cc/en/Main/Software)
 * Arduino-Makefile 1.3.4 (https://github.com/sudar/Arduino-Makefile)
@@ -26,23 +26,34 @@ What you need to use (<b>pre-requiriments</b>):
 
 
 ## How install
-When all pre-requeriments is installed, follow bellow steps:
+In this repositorie you found two folders:
+* arduino_cpp_style: This folder you found Arduino template based on C++ style;
+* arduino_sketch_style: This folder you found Arduino template based on Skecth style, same style used in Arduino IDE;
 
-1. Make download of all files from this repositorie
+To install, just fallow steps bellow:
 
-2. Close Qt Creator
+1. Close Qt Creator
 
-3. Create a folder called arduino in <folder-where-intalled-qt-creator>/qtcreator/templates/wizards/
+2. Fallow bellow commands:
 
-4. Copy all files that you downloaded to <folder-where-intalled-qt-creator>/qtcreator/templates/wizards/arduino
+```
+master@desk:~$ cd ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
+master@desk:~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards$ git clone https://github.com/cleitonsouza01/qt-creator-arduino
+Cloning into 'qt-creator-arduino'...
+remote: Counting objects: 30, done.
+remote: Compressing objects: 100% (27/27), done.
+remote: Total 30 (delta 9), reused 18 (delta 2), pack-reused 0
+Unpacking objects: 100% (30/30), done.
+Checking connectivity... done.
+master@desk:~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards$ 
 
-5. Open Qt Creator
+```
 
-6. Click on menu File > New File or Project > Select Arduino project and then have fun!
+3. Open Qt Creator
 
-On step 3 and 4, in my case for example, I need to copy all files (arduino folder) to: ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
+4. Click on menu File > New File or Project > Select Arduino project and then have fun!
 
-Maybe my example is a bit diferent from you because I installed all Qt library (to developer in C++), not only Qt Creator.
+On step 2, you will need to change directory to your directory intallation, in my Qt installation I used ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
 
 
 ## Author
