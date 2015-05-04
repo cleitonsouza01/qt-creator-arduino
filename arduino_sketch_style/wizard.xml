@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**************************************************************************
+**
+** This file is part of Qt Creator
+**
+** Copyright (c) 2011 Nokia Corporation and/or its subsidiary(-ies).
+**
+** Contact: Nokia Corporation (info@qt.nokia.com)
+**
+**
+** GNU Lesser General Public License Usage
+**
+** This file may be used under the terms of the GNU Lesser General Public
+** License version 2.1 as published by the Free Software Foundation and
+** appearing in the file LICENSE.LGPL included in the packaging of this file.
+** Please review the following information to ensure the GNU Lesser General
+** Public License version 2.1 requirements will be met:
+** http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
+**
+** In addition, as a special exception, Nokia gives you certain additional
+** rights. These rights are described in the Nokia Qt LGPL Exception
+** version 1.1, included in the file LGPL_EXCEPTION.txt in this package.
+**
+** Other Usage
+**
+** Alternatively, this file may be used in accordance with the terms and
+** conditions contained in a signed written agreement between you and Nokia.
+**
+** If you have questions regarding the use of this file, please contact
+** Nokia at qt-info@nokia.com.
+**
+**************************************************************************/
+
+Custom project wizard configuration example file. Note that by convention,
+the project file goes last.
+The "class" and "firstpage" attributes specify that it is a Qt 4 wizard and
+leave room for the Qt 4 target page.
+-->
+<wizard version="1" kind="project"
+        class="" firstpage="10"
+        id="A.Arduino" category="B.AVR">
+    <icon>arduino_logo.jpg</icon>
+    <description>Creates an Arduino project based on the makefile from the arduino-mk package.</description>
+    <displayname>Arduino Project using sketch</displayname>;
+    <displaycategory>AVR</displaycategory>
+    <files>
+        <file source="project.pro"      target="%ProjectName%.pro" openproject="true"/>
+        <file source="project.pro.user" target="%ProjectName%.pro.user"/>
+        <file source="project.ino" target="%ProjectName%.ino" openeditor="true"/>   
+        <file source="main.cpp"    target="main.cpp" openeditor="false"/>
+        <file source="Makefile"    target="Makefile"/>        
+    </files>
+    <!-- Create a 2nd wizard page with parameters -->
+    <fieldpagetitle>Project Parameters</fieldpagetitle>
+    <fields>
+        <field name="BOARD_TAG">
+            <fieldcontrol class="QComboBox" defaultindex="0">
+                <comboentries>
+                    <comboentry value="uno">
+                        <comboentrytext>UNO</comboentrytext>
+                    </comboentry>
+                    <comboentry value="atmega328">
+                        <comboentrytext>Arduino Duemilanove w/ ATmega328</comboentrytext>
+                    </comboentry>
+                    <comboentry value="diecimila">
+                        <comboentrytext>Arduino Diecimila or Duemilanove w/ ATmega168</comboentrytext>
+                    </comboentry>
+                    <comboentry value="nano328">
+                        <comboentrytext>Arduino Nano w/ ATmega328</comboentrytext>
+                    </comboentry>
+                    <comboentry value="nano">
+                        <comboentrytext>Arduino Nano w/ ATmega168</comboentrytext>
+                    </comboentry>
+                    <comboentry value="mega2560">
+                        <comboentrytext>Arduino Mega 2560 or Mega ADK</comboentrytext>
+                    </comboentry>
+                    <comboentry value="mega">
+                        <comboentrytext>Arduino Mega (ATmega1280)</comboentrytext>
+                    </comboentry>
+                    <comboentry value="mini328">
+                        <comboentrytext>Arduino Mini w/ ATmega328</comboentrytext>
+                    </comboentry>
+                    <comboentry value="mini">
+                        <comboentrytext>Arduino Mini w/ ATmega168</comboentrytext>
+                    </comboentry>
+                    <comboentry value="ethernet">
+                        <comboentrytext>Arduino Ethernet</comboentrytext>
+                    </comboentry>
+                    <comboentry value="fio">
+                        <comboentrytext>Arduino Fio</comboentrytext>
+                    </comboentry>
+                    <comboentry value="bt328">
+                        <comboentrytext>Arduino BT w/ ATmega328</comboentrytext>
+                    </comboentry>
+                    <comboentry value="bt">
+                        <comboentrytext>Arduino BT w/ ATmega168</comboentrytext>
+                    </comboentry>
+                    <comboentry value="lilypad328">
+                        <comboentrytext>LilyPad Arduino w/ ATmega328</comboentrytext>
+                    </comboentry>
+                    <comboentry value="lilypad">
+                        <comboentrytext>LilyPad Arduino w/ ATmega168</comboentrytext>
+                    </comboentry>
+                    <comboentry value="pro5v328">
+                        <comboentrytext>Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega328</comboentrytext>
+                    </comboentry>
+                    <comboentry value="pro5v">
+                        <comboentrytext>Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega168</comboentrytext>
+                    </comboentry>
+                    <comboentry value="pro328">
+                        <comboentrytext>Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega328</comboentrytext>
+                    </comboentry>
+                    <comboentry value="pro">
+                        <comboentrytext>Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega168</comboentrytext>
+                    </comboentry>
+                    <comboentry value="atmega168">
+                        <comboentrytext>Arduino NG or older w/ ATmega168</comboentrytext>
+                    </comboentry>
+                    <comboentry value="atmega8">
+                        <comboentrytext>Arduino NG or older w/ ATmega8</comboentrytext>
+                    </comboentry>
+                </comboentries>
+            </fieldcontrol>
+            <fielddescription>Board:</fielddescription>
+        </field>
+        <field mandatory="false" name="ARDUINO_LIBS">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                          defaulttext=" " />
+            <fielddescription>Libraries:</fielddescription>
+        </field>
+        <field mandatory="true" name="ARDUINO_DIR">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                          defaulttext="/usr/share/arduino" />
+            <fielddescription>Arduino Path:</fielddescription>
+        </field>
+        <field mandatory="true" name="ARDUINO_MAKEFILE_DIR">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                defaulttext="/usr/share/arduino/Arduino-Makefile" />
+            <fielddescription>Makefile Path:</fielddescription>
+        </field>
+        <field mandatory="true" name="AVR_TOOLS_DIR">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                defaulttext="/usr/share/arduino/hardware/tools/avr" />
+            <fielddescription>AVR Tools Path:</fielddescription>
+        </field>
+        <field mandatory="true" name="ARDUINO_PORT">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                          defaulttext="/dev/ttyACM0" />
+            <fielddescription>Serial port:</fielddescription>
+        </field>
+        <field mandatory="true" name="ARDUINO_PORT_SPEED">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                          defaulttext="115200" />
+            <fielddescription>Serial port baud rate:</fielddescription>
+        </field>
+        <field mandatory="true" name="SERIAL_MONITOR_PROGRAM">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                          defaulttext="/usr/bin/gtkterm" />
+            <fielddescription>Serial monitor program:</fielddescription>
+        </field>
+        <field mandatory="true" name="SERIAL_MONITOR_PROGRAM_ARG_PORT">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                          defaulttext="--port" />
+            <fielddescription>Serial monitor program port argument:</fielddescription>
+        </field>
+        <field mandatory="true" name="SERIAL_MONITOR_PROGRAM_ARG_SPEED">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                          defaulttext="--speed" />
+            <fielddescription>Serial monitor program baudrate argument:</fielddescription>
+        </field>
+    </fields>
+</wizard>
