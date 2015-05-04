@@ -24,6 +24,17 @@ What you need to use (*pre-requiriments*):
 * Qt Creator 3.3.1 (http://www.qt.io/download-open-source/)
 * GTKTerm version 0.99 (Can be any other serial monitor, I chosed it because is very lightweight)
 
+## Some screenshots
+
+![Choose template image](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_choose_temp.png?raw=false "Screen where you can choose template")
+
+![Choose Board image](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_choose_board.png?raw=false "Screen where you can choose Board")
+
+![Choose Parameters image](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_choose_param.png?raw=false "Screen where you can choose Parameters")
+
+![Programing C++ Style](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_example_cpp_style.png?raw=false "Programing C++ Style")
+
+![Programing in Skecth style](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_example_sketch_style.png?raw=false "Programing in Skecth style")
 
 ## How install
 In this repositorie you found two folders:
