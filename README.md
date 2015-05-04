@@ -36,11 +36,11 @@ When all pre-requeriments is installed, follow bellow steps:
 
 4. Copy all files that you downloaded to <folder-where-intalled-qt-creator>/qtcreator/templates/wizards/arduino
 
-4. Open Qt Creator
+5. Open Qt Creator
 
-5. Click on menu File > New File or Project > Select Arduino project and then have fun!
+6. Click on menu File > New File or Project > Select Arduino project and then have fun!
 
-On step 2, in my case for example, I need to copy all files (arduino folder) to: ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
+On step 3 and 4, in my case for example, I need to copy all files (arduino folder) to: ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
 
 Maybe my example is a bit diferent from you because I installed all Qt library (to developer in C++), not only Qt Creator.
 
