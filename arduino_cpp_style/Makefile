@@ -4,6 +4,9 @@ AVR_TOOLS_DIR	= %AVR_TOOLS_DIR%
 TARGET          = output
 ARDUINO_LIBS    = %ARDUINO_LIBS%
 
+#If had problem on compilation (-mmcu), try set MCU manualy
+#MCU             = atmega328p
+#F_CPU           = 16000000
 
 # Avrdude code for programming
 BOARD_TAG	= %BOARD_TAG%
