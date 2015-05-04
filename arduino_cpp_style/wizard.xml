@@ -42,7 +42,7 @@ leave room for the Qt 4 target page.
         id="A.Arduino" category="B.AVR">
     <icon>arduino_logo.jpg</icon>
     <description>Creates an Arduino project based on the makefile from the arduino-mk package.</description>
-    <displayname>Arduino Project</displayname>;
+    <displayname>Arduino Project C++ style</displayname>;
     <displaycategory>AVR</displaycategory>
     <files>
         <file source="project.pro"      target="%ProjectName%.pro" openproject="true"/>

@@ -30,11 +30,11 @@ In this repositorie you found two folders:
 * arduino_cpp_style: This folder you found Arduino template based on C++ style;
 * arduino_sketch_style: This folder you found Arduino template based on Skecth style, same style used in Arduino IDE;
 
-To install, just fallow steps bellow:
+To install, just follow steps bellow:
 
-1. Close Qt Creator
+1) Close Qt Creator
 
-2. Fallow bellow commands:
+2) Execute bellow commands in your linux terminal:
 
 ```
 master@desk:~$ cd ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
@@ -49,9 +49,9 @@ master@desk:~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards$
 
 ```
 
-3. Open Qt Creator
+3) Open Qt Creator
 
-4. Click on menu File > New File or Project > Select Arduino project and then have fun!
+4) Click on menu File > New File or Project > Select Arduino project and then have fun!
 
 On step 2, you will need to change directory to your directory intallation, in my Qt installation I used ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
 
@@ -62,3 +62,4 @@ Cleiton Souza (cleiton@tutamail.com)
 
 ## Similar works
 I found one Qt template created by Philippe Lucidarme (http://5lair.free.fr) but based on old Qt Creator / Arduino-Mk version, and mister Philippe no more update her template.
+
