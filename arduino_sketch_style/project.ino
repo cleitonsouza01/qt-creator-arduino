@@ -1,6 +1,8 @@
 /*
-Sketch:    %ProjectName%.ino
-Board:      %BOARD_TAG%
+Project:	%ProjectName%
+Board:		%BOARD_TAG%
+MCU:		%BOARD_MCU%	
+FRENQUENCY:	%BOARD_F%
 
 Created using Qt Creator
 */

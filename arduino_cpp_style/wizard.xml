@@ -42,11 +42,11 @@ leave room for the Qt 4 target page.
         id="A.Arduino" category="B.AVR">
     <icon>arduino_logo.jpg</icon>
     <description>Creates an Arduino project based on the makefile from the arduino-mk package.</description>
-    <displayname>Arduino Project C++ style</displayname>;
+    <displayname>Arduino Project using C++ style</displayname>;
     <displaycategory>AVR</displaycategory>
     <files>
         <file source="project.pro"      target="%ProjectName%.pro" openproject="true"/>
-        <file source="project.pro.user" target="%ProjectName%.pro.user"/>     
+        <file source="project.pro.user" target="%ProjectName%.pro.user"/>  
         <file source="main.cpp"    target="main.cpp" openeditor="true"/>
         <file source="Makefile"    target="Makefile"/>        
     </files>
@@ -56,72 +56,99 @@ leave room for the Qt 4 target page.
         <field name="BOARD_TAG">
             <fieldcontrol class="QComboBox" defaultindex="0">
                 <comboentries>
-                    <comboentry value="uno">
-                        <comboentrytext>UNO</comboentrytext>
-                    </comboentry>
-                    <comboentry value="atmega328">
-                        <comboentrytext>Arduino Duemilanove w/ ATmega328</comboentrytext>
-                    </comboentry>
-                    <comboentry value="diecimila">
-                        <comboentrytext>Arduino Diecimila or Duemilanove w/ ATmega168</comboentrytext>
-                    </comboentry>
-                    <comboentry value="nano328">
-                        <comboentrytext>Arduino Nano w/ ATmega328</comboentrytext>
-                    </comboentry>
-                    <comboentry value="nano">
-                        <comboentrytext>Arduino Nano w/ ATmega168</comboentrytext>
-                    </comboentry>
-                    <comboentry value="mega2560">
-                        <comboentrytext>Arduino Mega 2560 or Mega ADK</comboentrytext>
-                    </comboentry>
-                    <comboentry value="mega">
-                        <comboentrytext>Arduino Mega (ATmega1280)</comboentrytext>
-                    </comboentry>
-                    <comboentry value="mini328">
-                        <comboentrytext>Arduino Mini w/ ATmega328</comboentrytext>
-                    </comboentry>
-                    <comboentry value="mini">
-                        <comboentrytext>Arduino Mini w/ ATmega168</comboentrytext>
-                    </comboentry>
-                    <comboentry value="ethernet">
-                        <comboentrytext>Arduino Ethernet</comboentrytext>
-                    </comboentry>
-                    <comboentry value="fio">
-                        <comboentrytext>Arduino Fio</comboentrytext>
-                    </comboentry>
-                    <comboentry value="bt328">
-                        <comboentrytext>Arduino BT w/ ATmega328</comboentrytext>
-                    </comboentry>
-                    <comboentry value="bt">
-                        <comboentrytext>Arduino BT w/ ATmega168</comboentrytext>
-                    </comboentry>
-                    <comboentry value="lilypad328">
-                        <comboentrytext>LilyPad Arduino w/ ATmega328</comboentrytext>
-                    </comboentry>
-                    <comboentry value="lilypad">
-                        <comboentrytext>LilyPad Arduino w/ ATmega168</comboentrytext>
-                    </comboentry>
-                    <comboentry value="pro5v328">
-                        <comboentrytext>Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega328</comboentrytext>
-                    </comboentry>
-                    <comboentry value="pro5v">
-                        <comboentrytext>Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega168</comboentrytext>
-                    </comboentry>
-                    <comboentry value="pro328">
-                        <comboentrytext>Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega328</comboentrytext>
-                    </comboentry>
-                    <comboentry value="pro">
-                        <comboentrytext>Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega168</comboentrytext>
-                    </comboentry>
-                    <comboentry value="atmega168">
-                        <comboentrytext>Arduino NG or older w/ ATmega168</comboentrytext>
-                    </comboentry>
-                    <comboentry value="atmega8">
-                        <comboentrytext>Arduino NG or older w/ ATmega8</comboentrytext>
-                    </comboentry>
+                	<comboentry value="uno"> 
+			 	<comboentrytext>Arduino Uno</comboentrytext> 
+			</comboentry>
+			<comboentry value="atmegang"> 
+			 	<comboentrytext>Arduino NG or older</comboentrytext> 
+			</comboentry> 
+			<comboentry value="bt"> 
+			 	<comboentrytext>Arduino BT</comboentrytext> 
+			</comboentry> 
+			<comboentry value="diecimila"> 
+			 	<comboentrytext>Arduino Duemilanove or Diecimila</comboentrytext> 
+			</comboentry> 
+			<comboentry value="esplora"> 
+			 	<comboentrytext>Arduino Esplora</comboentrytext> 
+			</comboentry> 
+			<comboentry value="ethernet"> 
+			 	<comboentrytext>Arduino Ethernet</comboentrytext> 
+			</comboentry> 
+			<comboentry value="fio"> 
+			 	<comboentrytext>Arduino Fio</comboentrytext> 
+			</comboentry> 
+			<comboentry value="leonardo"> 
+			 	<comboentrytext>Arduino Leonardo</comboentrytext> 
+			</comboentry> 
+			<comboentry value="lilypad"> 
+			 	<comboentrytext>LilyPad Arduino</comboentrytext> 
+			</comboentry> 
+			<comboentry value="LilyPadUSB"> 
+			 	<comboentrytext>LilyPad Arduino USB</comboentrytext> 
+			</comboentry> 
+			<comboentry value="megaADK"> 
+			 	<comboentrytext>Arduino Mega ADK</comboentrytext> 
+			</comboentry> 
+			<comboentry value="mega"> 
+			 	<comboentrytext>Arduino Mega or Mega 2560</comboentrytext> 
+			</comboentry> 
+			<comboentry value="micro"> 
+			 	<comboentrytext>Arduino Micro</comboentrytext> 
+			</comboentry> 
+			<comboentry value="mini"> 
+			 	<comboentrytext>Arduino Mini</comboentrytext> 
+			</comboentry> 
+			<comboentry value="nano"> 
+			 	<comboentrytext>Arduino Nano</comboentrytext> 
+			</comboentry> 
+			<comboentry value="pro"> 
+			 	<comboentrytext>Arduino Pro or Pro Mini</comboentrytext> 
+			</comboentry> 
+			<comboentry value="robotControl"> 
+			 	<comboentrytext>Arduino Robot Control</comboentrytext> 
+			</comboentry> 
+			<comboentry value="robotMotor"> 
+			 	<comboentrytext>Arduino Robot Motor</comboentrytext> 
+			</comboentry>  
+			<comboentry value="yun"> 
+			 	<comboentrytext>Arduino Yun</comboentrytext> 
+			</comboentry>
                 </comboentries>
             </fieldcontrol>
             <fielddescription>Board:</fielddescription>
+        </field>
+        <field name="BOARD_MCU">
+            <fieldcontrol class="QComboBox" defaultindex="0">
+                <comboentries>
+                	<comboentry value="atmega328p"> 
+			 	<comboentrytext>atmega328p</comboentrytext> 
+			</comboentry>
+                	<comboentry value="atmega1280"> 
+			 	<comboentrytext>atmega1280</comboentrytext> 
+			</comboentry>
+			<comboentry value="atmega168"> 
+			 	<comboentrytext>atmega168</comboentrytext> 
+			</comboentry>
+                	<comboentry value="atmega2560"> 
+			 	<comboentrytext>atmega2560</comboentrytext> 
+			</comboentry>			
+                	<comboentry value="atmega32u4"> 
+			 	<comboentrytext>atmega32u4</comboentrytext> 
+			</comboentry>
+			<comboentry value="atmega8"> 
+			 	<comboentrytext>atmega8</comboentrytext> 
+			</comboentry>
+			<comboentry value="atmegang"> 
+			 	<comboentrytext>atmegang</comboentrytext> 
+			</comboentry>						 
+                </comboentries>
+            </fieldcontrol>
+            <fielddescription>Microcontroller:</fielddescription>
+        </field>
+        <field mandatory="true" name="BOARD_F">
+            <fieldcontrol class="QLineEdit" validator='^[^"]+$'
+                          defaulttext="16000000" />
+            <fielddescription>Frequency:</fielddescription>
         </field>
         <field mandatory="false" name="ARDUINO_LIBS">
             <fieldcontrol class="QLineEdit" validator='^[^"]+$'
