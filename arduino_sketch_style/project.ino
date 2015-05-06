@@ -6,16 +6,24 @@ FRENQUENCY:	%BOARD_F%
 
 Created using Qt Creator
 */
+#ifndef ARDUINO_H
+#define ARDUINO_H
+#include <Arduino.h>
+#endif
 
-// Always create your functions here, before setup() and loop() functions
+//******************************
+//* FUNCTIONS SECTION
+//* Always create your functions here, before setup() and loop() functions
 
 
 
-// Leave this part to end of file
-// Always leave setup() and loop() functions in final of file
+
+
+//******************************
+//* SETUP AND LOOP SECTION
+//* Always leave setup() and loop() functions at the end of file
 void setup() 
 {
-  
 
 }
 

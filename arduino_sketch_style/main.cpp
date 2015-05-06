@@ -6,8 +6,10 @@ FRENQUENCY:	%BOARD_F%
 
 Created using QtCreator
 */
-
+#ifndef ARDUINO_H
+#define ARDUINO_H
 #include <Arduino.h>
+#endif
 
 int main()
 {
