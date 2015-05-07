@@ -1,5 +1,7 @@
 # Qt Creator Arduino configuration
 
+Portuguese spearks / Pessoal de lingua portuguesa: Postei uma série de videos no youtube de como configurar todo seu ambiente de desenvolvimento, confira em https://www.youtube.com/user/cleitonsouza01/playlists
+
 In this repositorie you can found template that you need to configure your Qt Creator as your Arduino IDE.
 
 ## About Qt Creator
