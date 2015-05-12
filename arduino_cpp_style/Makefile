@@ -6,9 +6,11 @@ ARDUINO_LIBS    = %ARDUINO_LIBS%
 
 
 BOARD_TAG	= %BOARD_TAG%
-#BOARD_SUB	=
-MCU			= %BOARD_MCU%
-F_CPU		= %BOARD_F%
+BOARD_SUB	= %BOARD_MCU%
+# If you found problem on compile, you can uncomment and change MCU and F_CPU
+# To know what MCU you can use check board.txt on end of this file
+#MCU		# %BOARD_MCU%
+#F_CPU		= %BOARD_F%
 MONITOR_PORT = %ARDUINO_PORT%
 
 # Avrdude code for programming
@@ -21,7 +23,10 @@ AVRDUDE_CONF	= $(ARDUINO_DIR)/hardware/tools/avr/etc/avrdude.conf
 # Arduino makefile
 include %ARDUINO_MAKEFILE_DIR%/Arduino.mk
 
-#Bellow you found MCU values extracted from board.txt file. Added just to reference
+# Bellow you found MCU values extracted from board.txt file. Added just to reference
+# MCU data is the info after .menu.cpu.
+# Example: #atmegang.menu.cpu.atmega168.build.mcu=atmega168 => MCU = atmega168
+#
 #atmegang.build.mcu=atmegang
 #atmegang.menu.cpu.atmega168.build.mcu=atmega168
 #atmegang.menu.cpu.atmega8.build.mcu=atmega8

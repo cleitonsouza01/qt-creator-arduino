@@ -1,11 +1,12 @@
 # Qt Creator Arduino configuration
 
-Portuguese spearks / Pessoal de lingua portuguesa: Postei uma série de videos no youtube de como configurar todo seu ambiente de desenvolvimento, confira em https://www.youtube.com/user/cleitonsouza01/playlists
-
 In this repositorie you can found template that you need to configure your Qt Creator as your Arduino IDE.
 
+Portuguese spearks / Pessoal de lingua portuguesa: Postei uma série de videos no youtube de como configurar todo seu ambiente de desenvolvimento, confira em https://www.youtube.com/user/cleitonsouza01/playlists
+
+
 ## About Qt Creator
-Qt Creator provides a cross-platform where you can developer from Windows, Linux or Mac. Is a very advanced IDE when provide a lot of smart things to help you develop more quickly and easyly. Some main features of Qt Creator:
+Qt Creator provides a cross-platform where you can developer from Windows, Linux or Mac. Is a very advanced IDE when provide a lot of smart things to help you develop more quickly and easily. Some main features of Qt Creator:
 - Rapid code navigation tools
 - Syntax highlighting and code completion
 - Static code checking and style hints as you type
@@ -15,6 +16,7 @@ Qt Creator provides a cross-platform where you can developer from Windows, Linux
 - Parenthesis matching and parenthesis selection modes
 
 With all these features and more, Qt Creator can be lightweight, for me one of the best IDE.
+
 
 ## About my template
 What you found in this repositorie is one template that setup Qt Creator as Arduino IDE.
@@ -26,17 +28,28 @@ What you need to use (*pre-requiriments*):
 * Qt Creator 3.3.1 (http://www.qt.io/download-open-source/)
 * GTKTerm version 0.99 (Can be any other serial monitor, I chosed it because is very lightweight)
 
-## Some screenshots
 
+## Some screenshots
 ![Choose template image](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_choose_temp.png?raw=false "Screen where you can choose template")
 
-![Choose Board image](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_choose_board.png?raw=false "Screen where you can choose Board")
-
 ![Choose Parameters image](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_choose_param.png?raw=false "Screen where you can choose Parameters")
+
+![Choose Board image](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_choose_board.png?raw=false "Screen where you can choose Board")
 
 ![Programing C++ Style](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_example_cpp_style.png?raw=false "Programing C++ Style")
 
 ![Programing in Skecth style](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_example_sketch_style.png?raw=false "Programing in Skecth style")
+
+
+## Boards supported and tested
+Theoretically this template can support all boards that Arduino-MakeFile support, it's mean:
+* Supports all official AVR-based Arduino boards
+* Supports chipKIT
+* Supports Teensy 3.x (via Teensyduino)
+
+I Already tested succesfully with:
+Arduino Mega 2560, Arduino Pro and Arduino Uno. If you already tested in some other board, say to me about your experience.
+
 
 ## How install
 In this repositorie you found two folders:

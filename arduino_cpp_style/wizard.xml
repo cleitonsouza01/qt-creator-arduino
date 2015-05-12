@@ -119,29 +119,41 @@ leave room for the Qt 4 target page.
         </field>
         <field name="BOARD_MCU">
             <fieldcontrol class="QComboBox" defaultindex="0">
-                <comboentries>
-                	<comboentry value="atmega328p"> 
-			 	<comboentrytext>atmega328p</comboentrytext> 
-			</comboentry>
-                	<comboentry value="atmega1280"> 
-			 	<comboentrytext>atmega1280</comboentrytext> 
-			</comboentry>
-			<comboentry value="atmega168"> 
-			 	<comboentrytext>atmega168</comboentrytext> 
-			</comboentry>
-                	<comboentry value="atmega2560"> 
-			 	<comboentrytext>atmega2560</comboentrytext> 
-			</comboentry>			
-                	<comboentry value="atmega32u4"> 
-			 	<comboentrytext>atmega32u4</comboentrytext> 
-			</comboentry>
-			<comboentry value="atmega8"> 
-			 	<comboentrytext>atmega8</comboentrytext> 
-			</comboentry>
-			<comboentry value="atmegang"> 
-			 	<comboentrytext>atmegang</comboentrytext> 
-			</comboentry>						 
-                </comboentries>
+            <comboentries>
+            	<comboentry value="16MHzatmega328"> 
+				 	<comboentrytext>(just pro) 16MHz atmega328</comboentrytext> 
+				</comboentry>
+				<comboentry value="8MHzatmega328"> 
+				 	<comboentrytext>(just pro) 8MHz atmega328</comboentrytext> 
+				</comboentry>
+				<comboentry value="atmega328p"> 
+				 	<comboentrytext>atmega328p</comboentrytext> 
+				</comboentry>
+				<comboentry value="atmega1280"> 
+				 	<comboentrytext>atmega1280</comboentrytext> 
+				</comboentry>
+				<comboentry value="16MHzatmega168"> 
+				 	<comboentrytext>(just pro) 16MHz atmega168</comboentrytext> 
+				</comboentry>
+				<comboentry value="8MHzatmega328"> 
+				 	<comboentrytext>(just pro)  8MHz atmega328</comboentrytext> 
+				</comboentry>
+				<comboentry value="atmega168"> 
+				 	<comboentrytext>atmega168</comboentrytext> 
+				</comboentry>
+				<comboentry value="atmega2560"> 
+				 	<comboentrytext>atmega2560</comboentrytext> 
+				</comboentry>			
+				<comboentry value="atmega32u4"> 
+				 	<comboentrytext>atmega32u4</comboentrytext> 
+				</comboentry>
+				<comboentry value="atmega8"> 
+				 	<comboentrytext>atmega8</comboentrytext> 
+				</comboentry>
+				<comboentry value="atmegang"> 
+				 	<comboentrytext>atmegang</comboentrytext> 
+				</comboentry>						 
+			</comboentries>
             </fieldcontrol>
             <fielddescription>Microcontroller:</fielddescription>
         </field>
