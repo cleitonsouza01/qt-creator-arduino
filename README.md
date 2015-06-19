@@ -89,8 +89,7 @@ remote: Total 30 (delta 9), reused 18 (delta 2), pack-reused 0
 Unpacking objects: 100% (30/30), done.
 Checking connectivity... done.
 ```
-* Note *
-*
+* Note:
 * You may need to change the first command to match your Qt installation.
 * My Qt installation was ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
 * A tip is to type in ~/Qt then hit [TAB] to get the shell to auto-complete stuff for you.
@@ -105,8 +104,8 @@ And then have fun!
 
 
 ## Author
-Cleiton Souza (cleiton@tutamail.com)
-Jason Jorgenson (jjorgenson@gmail.com)
+* Cleiton Souza (cleiton@tutamail.com)
+* Jason Jorgenson (jjorgenson@gmail.com)
 
 ## Similar works
 I found one Qt template created by Philippe Lucidarme (http://5lair.free.fr) but it is based on an old version of Qt Creator / Arduino-Mk version, and it seems that Philippe no longer updates this template.
