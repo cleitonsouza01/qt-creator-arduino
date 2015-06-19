@@ -1,6 +1,6 @@
 # Qt Creator Arduino configuration
 
-In this repositorie you can found template that you need to configure your Qt Creator as your Arduino IDE.
+This repository creates a template that you allows you to configure Qt Creator as your Arduino's IDE.
 
 Portuguese spearks / Pessoal de lingua portuguesa: Postei uma série de videos no youtube de como configurar todo seu ambiente de desenvolvimento, confira em https://www.youtube.com/user/cleitonsouza01/playlists
 
@@ -15,19 +15,24 @@ Qt Creator provides a cross-platform where you can developer from Windows, Linux
 - Code folding
 - Parenthesis matching and parenthesis selection modes
 
-With all these features and more, Qt Creator can be lightweight, for me one of the best IDE.
+With all these features and more, Qt Creator can be lightweight, and for me, is one of the best IDE's available.
 
 
 ## About my template
-What you found in this repositorie is one template that setup Qt Creator as Arduino IDE.
+This repository creates a template that you allows you to configure Qt Creator as your Arduino's IDE.
 
-What you need to use (*pre-requiriments*):
-* PC running Linux (Windows and Mac can use it too, but need change some small things, in future I will provide files ready to use in all environment)
-* Arduino IDE 1.6.3 (http://www.arduino.cc/en/Main/Software)
-* Arduino-Makefile 1.3.4 (https://github.com/sudar/Arduino-Makefile)
-* Qt Creator 3.3.1 (http://www.qt.io/download-open-source/)
-* GTKTerm version 0.99 (Can be any other serial monitor, I chosed it because is very lightweight)
-
+What you need to use (*pre-requisites*):
+* PC running Linux
+- Windows and Mac can use it too, but some small changes are necessary
+- In the future I will provide files ready to use in all environments
+* Arduino IDE 1.6.3
+- http://www.arduino.cc/en/Main/Software
+* Arduino-Makefile 1.3.4
+- https://github.com/sudar/Arduino-Makefile
+* Qt Creator 3.3.1
+- http://www.qt.io/download-open-source
+* GTKTerm version 0.99
+- Can be any other serial monitor, but I chose it because is very lightweight
 
 ## Some screenshots
 ![Choose template image](https://github.com/cleitonsouza01/qt-creator-arduino/blob/master/screenshot/img_choose_temp.png?raw=false "Screen where you can choose template")
@@ -47,45 +52,61 @@ Theoretically this template can support all boards that Arduino-MakeFile support
 * Supports chipKIT
 * Supports Teensy 3.x (via Teensyduino)
 
-I Already tested succesfully with:
-Arduino Mega 2560, Arduino Pro and Arduino Uno. If you already tested in some other board, say to me about your experience.
+I Already tested successfully with:
+- Arduino Mega 2560
+- Arduino Pro
+- Arduino Uno
+If you have tested any other boards, please tell me about your experience!
 
 
 ## How install
-In this repositorie you found two folders:
-* arduino_cpp_style: This folder you found Arduino template based on C++ style;
-* arduino_sketch_style: This folder you found Arduino template based on Skecth style, same style used in Arduino IDE;
+In this repository you will find two folders:
+* arduino_cpp_style
+- This folder contains a C++ style Arduino template
+* arduino_sketch_style
+- This folder contains a Sketch style Arduino template
+- (the same style used in the official Arduino IDE)
 
-To install, just follow steps bellow:
+
+INSTALLATION INSTRUCTIONS
+-------------------------
 
 1) Close Qt Creator
 
-2) Execute bellow commands in your linux terminal:
+2) Execute the following commands* in Terminal:
 
 ```
-master@desk:~$ cd ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
-master@desk:~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards$ git clone https://github.com/cleitonsouza01/qt-creator-arduino
+cd ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
+git clone https://github.com/cleitonsouza01/qt-creator-arduino
+```
+You should see something similar to this:
+
+```
 Cloning into 'qt-creator-arduino'...
 remote: Counting objects: 30, done.
 remote: Compressing objects: 100% (27/27), done.
 remote: Total 30 (delta 9), reused 18 (delta 2), pack-reused 0
 Unpacking objects: 100% (30/30), done.
 Checking connectivity... done.
-master@desk:~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards$ 
-
 ```
+* Note *
+*
+* You may need to change the first command to match your Qt installation.
+* My Qt installation was ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
+* A tip is to type in ~/Qt then hit [TAB] to get the shell to auto-complete stuff for you.
 
 3) Open Qt Creator
 
-4) Click on menu File > New File or Project > Select Arduino project and then have fun!
+4) Click on:
+File > New File or Project
+Select Arduino project
 
-On step 2, you will need to change directory to your directory intallation, in my Qt installation I used ~/Qt5.4.1/Tools/QtCreator/share/qtcreator/templates/wizards/
+And then have fun!
 
 
 ## Author
 Cleiton Souza (cleiton@tutamail.com)
-
+Jason Jorgenson (jjorgenson@gmail.com)
 
 ## Similar works
-I found one Qt template created by Philippe Lucidarme (http://5lair.free.fr) but based on old Qt Creator / Arduino-Mk version, and mister Philippe no more update her template.
-
+I found one Qt template created by Philippe Lucidarme (http://5lair.free.fr) but it is based on an old version of Qt Creator / Arduino-Mk version, and it seems that Philippe no longer updates this template.
