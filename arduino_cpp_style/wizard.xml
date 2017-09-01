@@ -39,7 +39,7 @@ leave room for the Qt 4 target page.
 -->
 <wizard version="1" kind="project"
         class="" firstpage="10"
-        id="A.Arduino" category="B.AVR">
+        id="A.Arduino_CPP" category="B.AVR">
     <icon>arduino_logo.jpg</icon>
     <description>Creates an Arduino project based on the makefile from the arduino-mk package.</description>
     <displayname>Arduino Project using C++ style</displayname>;
