@@ -1,12 +1,12 @@
 # Qt Creator Arduino configuration
 
-This repository creates a template that you allows you to configure Qt Creator as your Arduino's IDE.
+This repository creates a template that allows you to configure Qt Creator as your Arduino's IDE.
 
 Portuguese spearks / Pessoal de lingua portuguesa: Postei uma série de videos no youtube de como configurar todo seu ambiente de desenvolvimento, confira em https://www.youtube.com/user/cleitonsouza01/playlists
 
 
 ## About Qt Creator
-Qt Creator provides a cross-platform where you can developer from Windows, Linux or Mac. Is a very advanced IDE when provide a lot of smart things to help you develop more quickly and easily. Some main features of Qt Creator:
+Qt Creator is a cross-platform IDE where you can develope on Windows, Linux or Mac. Qt Creator is advanced IDE that provides a lot of smart things to help you to develop more quickly and easily. Some main features of Qt Creator:
 - Rapid code navigation tools
 - Syntax highlighting and code completion
 - Static code checking and style hints as you type
@@ -15,11 +15,11 @@ Qt Creator provides a cross-platform where you can developer from Windows, Linux
 - Code folding
 - Parenthesis matching and parenthesis selection modes
 
-With all these features and more, Qt Creator can be lightweight, and for me, is one of the best IDE's available.
+With all these and many more features, Qt Creator can be lightweight, and for me, is one of the best IDE's available.
 
 
 ## About my template
-This repository creates a template that you allows you to configure Qt Creator as your Arduino's IDE.
+This repository provides a template that allows you to configure Qt Creator as your Arduino's IDE.
 
 What you need to use (*pre-requisites*):
 * PC running Linux
@@ -47,18 +47,17 @@ What you need to use (*pre-requisites*):
 
 
 ## Boards supported and tested
-Theoretically this template can support all boards that Arduino-MakeFile support, it's mean:
+Theoretically this template can support all boards that Arduino-MakeFile support, it means:
 * Supports all official AVR-based Arduino boards
 * Supports chipKIT
 * Supports Teensy 3.x (via Teensyduino)
 
-I Already tested successfully with:
+I already tested successfully with:
 - Arduino Mega 2560
 - Arduino Pro
 - Arduino Uno
 
 If you have tested any other boards, please tell me about your experience!
-
 
 ## How install
 In this repository you will find two folders:
